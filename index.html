@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <h1>Tecno<span>Plus</span></h1>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Celulares O Audifonos">
+              </div>
+            <ul>
+                <li><a href="form.html">Agregar</a></li>
+                
+                <div>
+                    
+                    <div class="car">
+                    <p class="count-product">0</p>
+                    <img onclick="showCart(this)" class="cart" src="img/cart.png" alt="">
+                    </div>
+
+                    <div class="cart-products" id="products-id">
+                        
+                        <p class="close-btn" onclick="closeBtn()">X</p>
+                        <h3>Mi carrito</h3>
+
+                        <div class="card-items"></div>
+
+                        <h2>Total: $<strong class="price-total">0</strong></h2>
+                    </div>
+                </div>         
+            </ul>
+        </nav>
+    </header>
+    
+
+    
+    <section class="container">
+        <div id="sample" class="sample"> 
+               
+        </div>
+        <div class="products">
+            
+            
+
+             <div class="carts">
+                <div>
+                    <img src="img/xiaomi_poco_x5.jpg" alt="">
+                    <p class="price_carts"><span>325</span>$</p>
+                </div>
+                <p class="title">Celular Xiaomi Poco X5 5G 256Gb / 8Ram / 48Mp Color Verde</p>
+
+                <p class="amount">Cantidad : <p id="poco_x5">5</p> </p> 
+                <a href="#" class="btn-add-cart" data-id="pocox5" onclick="descontar()"">Agregar</a>                  
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/iphone13.png" alt="">
+                    <p><span>914</span>$</p>
+                </div>
+                <p class="title"> Celular Apple iPhone 13 128gb Cámara 12mpx Color Azul</p>
+                <p class="amount">Cantidad : <p id="iphone13">5</p> </p> 
+                <a href="#" class="btn-add-cart" data-id="iphone13" onclick="descontar()">Agregar</a>                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/uricurales1.jpg" alt="">
+                    <p><span>12.50</span>$</p>
+                </div>
+                <p class="title"> Audifonos Inpods 12 Bluetooth 5.0 Multicolor Touch Color Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p> 
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/auricurales2.jpg" alt="">
+                    <p><span>20</span>$</p>
+                </div>
+                <p class="title"> Audifonos Inalambricos AUT120 Bluetooth 1Hora Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p> 
+                <a href="" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/xiaomi_note12.jpg" alt="">
+                    <p><span>200</span>$</p>
+                </div>
+                <p class="title"> Celular Xiaomi Note 12 4/128gb - Garantia 1 año</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p> 
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/audifonos3.jpg" alt="">
+                    <p><span>28</span>$</p>
+                </div>
+                <p class="title"> Audífonos Auriculares Manos Libres Bluetooth Tipo Airpods Tactiles</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p> 
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/tecno.jpeg" alt="">
+                    <p><span>138</span>$</p>
+                </div>
+                <p class="title"> Celular Tecno Spark 10c 128Gb 16 Ram Negro + Audífonos</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/redmi_12.jpeg" alt="">
+                    <p><span>250</span>$</p>
+                </div>
+                <p class="title"> Celular Xiaomi Redmi 12 8GB/256GB</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="8" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/pocof5.webp" alt="">
+                    <p><span>460</span>$</p>
+                </div>
+                <p class="title"> Celular Xiaomi Poco F5 256Gb 12Ram 64Mp Color Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+
+                <a href="" data-id="9" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/camon20.jpeg" alt="">
+                    <p><span>226</span>$</p>
+                </div>
+                <p class="title">Celular Tecno Camon 20 256 GB 16 Ram Negro + Audífonos</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="10" class="btn-add-cart">add to cart</a>
+            </div>
+            
+            <div class="carts">
+                <div>
+                    <img src="img/auricurales_F9.jpeg" alt="">
+                    <p><span>17.55</span>$</p>
+                </div>
+                <p class="title"> Audifonos inalambricos Bluetooth in-ear F9-5C Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="11" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/note30pro.jpg" alt="">
+                    <p><span>273</span>$</p>
+                </div>
+                <p class="title"> Celular Infinix Note 30 Pro 16G+256GB Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="12" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/hyunday.jpeg" alt="">
+                    <p><span>99.84</span>$</p>
+                </div>
+                <p class="title"> Celular HYUNDAI L651 4G 64GB 3 RAM + Airpods</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="13" class="btn-add-cart">add to cart</a>
+            </div>
+
+            <div class="carts">
+                <div>
+                    <img src="img/tecno_pop_5.jpg" alt="">
+                    <p><span>87.61</span>$</p>
+                </div>
+                <p class="title"> Celular Tecno Pop 5 2G+32G Azul</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="14" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/galaxy_a34.jpeg" alt="">
+                    <p><span>323</span>$</p>
+                </div>
+                <p class="title"> Celular Samsung Galaxy A34 128GB 6 Ram + Audífonos</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="15" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/galaxy_a34.jpeg" alt="">
+                    <p><span>222</span>$</p>
+                </div>
+                <p class="title"> Celular Reacondicionado iPhone SE 2020 128GB 12 Meses De Garantía Color Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="16" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/iphne_7.jpg" alt="">
+                    <p><span>231.88</span>$</p>
+                </div>
+                <p class="title"> Celular Reacondicionado iPhone 7 PLUS 128GB 12 Meses De Garantía Color ORO</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="17" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/motog_23.jpeg" alt="">
+                    <p><span>198</span>$</p>
+                </div>
+                <p class="title"> Celular Motorola G23 128Gb / 4Ram / 50mpx Gris + Audífonos</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="18" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/infinix_note_12.jpg" alt="">
+                    <p><span>228.39</span>$</p>
+                </div>
+                <p class="title">Celular Infinix Note 12 128gb / 8 Ram / 50mp Color Blanco</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="19" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/airprods_pro_1.jpeg" alt="">
+                    <p><span>37.90</span>$</p>
+                </div>
+                <p class="title">Audifonos Bluetooth Airprods Pro 1:1</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="20" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/airprods_pro.jpg" alt="">
+                    <p><span>29.95</span>$</p>
+                </div>
+                <p class="title">Airpods Pro Para Iphone 1:1 Audifonos Inalambricos + Estuche De Obsequio</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="21" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/inpods_12.jpg" alt="">
+                    <p><span>12.48</span>$</p>
+                </div>
+                <p class="title">Audifonos Inpods 12 Bluetooth 5.0 Multicolor Touch Color Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="22" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/galaxy_bud.jpg" alt="">
+                    <p><span>26</span>$</p>
+                </div>
+                <p class="title">Samsung Galaxy Buds Pro 2 2023 Alta Calidad AAA Replica</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="23" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/lenovo_livepods.jpg" alt="">
+                    <p><span>29</span>$</p>
+                </div>
+                <p class="title">Audifonos Inalambricos Lenovo LivePods LP40 Pro Color Rosado</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="24" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/gs7fa.jpg" alt="">
+                    <p><span>27.9</span>$</p>
+                </div>
+                <p class="title">Audifonos Inalambricos Bluetooth Gamer Con Microfono GS7FA</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="25" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/x15.jpg" alt="">
+                    <p><span>15</span>$</p>
+                </div>
+                <p class="title">Audifonos Inalambricos Gamer X15 Bluetooth 5.3</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="26" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/g2000.jpeg" alt="">
+                    <p><span>27.46</span>$</p>
+                </div>
+                <p class="title">Audífonos Gamer G2000 Cancelación De Ruido Aux 3.5Mm A</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="27" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/aut2005.jpg" alt="">
+                    <p><span>21.22</span>$</p>
+                </div>
+                <p class="title">Audifonos Inalambricos AUT205 Bluetooth 1Hora Color Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="28" class="btn-add-cart">add to cart</a>
+            </div>
+            <!-- <div class="carts">
+                <div>
+                    <img src="img/am-tw01.jpg" alt="">
+                    <p><span>18</span>$</p>
+                </div>
+                <p class="title">Audifonos Bluetooth Deportivos AM-TW01 Color Negro</p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="29" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="img/buds.jpg" alt="">
+                    <p><span>30.70</span>$</p>
+                </div>
+                <p class="title">Redmi Buds Essential Audífonos Inalámbricos Original Xiaomi/p>
+                <p class="amount">Cantidad : <p id="numero2">5</p> </p>
+                <a href="" data-id="30" class="btn-add-cart">add to cart</a>
+            </div> -->
+
+            <div id="show" class="show"> 
+               
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="js/custom.js" ></script>
+    <script src="js/add.js" ></script>
+    <footer>Daniel Osorio Escobar &copy</footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+nav{
+    background-color: rgb(212, 209, 206);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 3px 10px rgb(255, 145, 0);
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    height: 47px;
+    margin-bottom: 5px;
+}
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 0 13px;
+}
+
+nav a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    color: rgb(255, 145, 0);
+}
+span{
+    color: rgb(255, 145, 0);
+}
+nav h1{
+    margin-left:10px ;
+    margin-top: 10px;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px auto 45px auto;
+    width: 90%;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.container>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(212, 209, 206);
+    height: 400px;
+    width: 400px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding-top: 35px;
+    gap: 25px;
+    flex: 1 1 300px;
+}
+
+.container>div>form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container>div>form>input,
+select {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    color: black;
+}
+option{
+    color: black;
+}
+
+.container .button {
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    color: black;
+}
+
+.title h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 300;
+    font-size: 40px;
+}
+.showProducts{
+    display: flex;
+    flex-direction: row;
+}
+
+.productContainer{
+    text-align: center;
+    display: flex;    
+    justify-content: center;
+}
+
+/*tarjeta*/
+.carts{
+    margin-top: 50px;
+    margin-left: 40px;
+    max-width: 250px;
+    box-shadow: 0 3px 5px rgb(255, 145, 0);
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+    
+}
+.carts img{
+    width: 100%;
+}
+.price_carts{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.carts p{
+    margin-bottom: 10px;
+}
+/*precio*/
+.carts div p{
+    position: absolute;
+    top: 0;   
+    background-color: rgb(255, 145, 0);
+    color: #000000;
+    padding: 2px 7px 4px 21px;
+}
+.carts span{
+    color: #000;
+}
+
+.carts div{
+    position: relative;
+}
+
+.carts a{
+    font-family: system-ui;
+    text-decoration: none;
+    background: rgb(255, 145, 0);
+    padding: 9px 23px;
+    color: #000000;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.carts a:hover{
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(255, 145, 0);
+    transition-duration: .2s;
+}

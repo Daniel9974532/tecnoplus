@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<header id="header">
+    <nav>
+        
+        <h1>Tecno<span>Plus</span></h1>
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+        </ul>
+
+    </nav>
+</header>
+<body>
+   
+
+    <main>
+        <div class="container">
+            <!-- Añadir -->
+            <div class="add">
+                <h2>Add</h2>
+                <form>
+                    <label>Product Name</label>
+                    <input type="text" id="addProduct" name="productName">
+            
+                    <label>Product Value</label>
+                    <input type="number" id="addValue">
+            
+                    <label>Stock</label>
+                    <input type="number" id="addStock">
+            
+                    <label>Image URL</label>
+                    <input type="text" id="addImage">
+            
+                    <input class="button" type="button" id="addButton" value="Add">
+                </form>
+            </div>
+            
+            <!-- Editar -->
+            <div class="edit">
+                <h2>Edit</h2>
+                <form>
+                    <label>Product Name</label>
+                    <select id="productEdit">
+                        <option value="">---</option>
+                    </select>
+            
+                    <label>Attribute</label>
+                    <select id="attributeEdit">
+                        <option value="">---</option>
+                    </select>
+            
+                    <label>New Value</label>
+                    <input type="text" id="newAttribute">
+            
+                    <input class="button" type="button" id="editButton" value="Edit">
+                </form>
+            </div>
+            
+
+            <!-- Eliminar -->
+            <div class="delete">
+                <h2>Delete</h2>
+                <form>
+                    <label>Product Name</label>
+                    <select id="productDelete">
+                        <option value="">---</option>
+                    </select>
+                    <input class="button" type="button" id="deleteButton" value="Delete">
+                </form>
+            </div>
+            
+        </div>
+
+        <div class="title">
+            <h2>Productos</h2>
+        </div>
+
+        <div class="messageContainer">
+            <div id="message"></div>
+        </div>
+        
+        
+        <!-- Productos -->
+        <div class="productContainer">
+            <div class="showProducts" id="showProducts">
+                
+            </div>
+        </div>
+        
+        </div>
+    </main>
+
+    <script src="js/form.js"></script>
+    
+</body>
+
+</html>
